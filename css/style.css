@@ -1,0 +1,86 @@
+/*Font Awesome Free Icon*/
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/*Google fonts*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rubik", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #504e70;
+}
+.main-container {
+  background-color: #f2f2fc;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100%;
+  background-color: #fdf9ff;
+  border-right: 1px solid #e8dfec;
+}
+.main-content {
+  margin-left: 270px;
+}
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+section.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+section.home .home-content img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 7px solid white;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+section.home .home-content h1 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #302e4d;
+  margin-bottom: 10px;
+}
+section.home .home-content p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.social-links a i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  display: inline-block;
+  border-radius: 50%;
+  color: white;
+  margin: 0 5px;
+  transition: 0.5s ease all;
+}
+.social-links a i:hover {
+  transform: scale(1.1);
+  color: #ec1839;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
