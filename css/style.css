@@ -144,7 +144,7 @@ section.home {
   align-items: center;
   justify-content: center;
   text-align: center;
-  display: none;
+  /* display: none; */
 }
 section.home .home-content img {
   width: 180px;
@@ -182,7 +182,7 @@ section.home .home-content p {
 
 /* About */
 section.about {
-  display: none;
+  /* display: none; */
 }
 section.about .sub-title {
   margin-bottom: 30px;
@@ -320,7 +320,7 @@ section.about .item .circle {
 
 /* service section */
 .services-section {
-  display: none;
+  /* display: none; */
 }
 .services-section .row .services-item {
   width: 33.3%;
@@ -363,7 +363,7 @@ section.about .item .circle {
 /* Portfolio */
 section.portfolio-section {
   padding: 60px 15px 60px 0;
-  display: none;
+  /* display: none; */
 }
 section.portfolio-section .navigation-btn {
   text-align: center;
@@ -399,7 +399,7 @@ section.portfolio-section .navigation-btn button.active {
   transition: 0.5s ease all;
 }
 .portfolio-section .portfolio-item.hide {
-  display: none;
+  /* display: none; */
 }
 .portfolio-section .portfolio-item.show {
   animation: showIn 0.5s ease;
