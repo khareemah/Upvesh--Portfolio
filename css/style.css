@@ -144,7 +144,7 @@ section.home {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* display: none; */
+  display: none;
 }
 section.home .home-content img {
   width: 180px;
@@ -182,7 +182,7 @@ section.home .home-content p {
 
 /* About */
 section.about {
-  /* display: none; */
+  display: none;
 }
 section.about .sub-title {
   margin-bottom: 30px;
@@ -320,7 +320,7 @@ section.about .item .circle {
 
 /* service section */
 .services-section {
-  /* display: none; */
+  display: none;
 }
 .services-section .row .services-item {
   width: 33.3%;
@@ -363,7 +363,7 @@ section.about .item .circle {
 /* Portfolio */
 section.portfolio-section {
   padding: 60px 15px 60px 0;
-  /* display: none; */
+  display: none;
 }
 section.portfolio-section .navigation-btn {
   text-align: center;
@@ -614,6 +614,62 @@ section.blog-section .blog-text span {
   font-weight: 600;
 }
 
+/* contact section */
+section.contact-section {
+  /* display: none; */
+}
+section.contact-section .row .contact-item {
+  width: 33.3%;
+  text-align: center;
+}
+section.contact-section .contact-item i {
+  margin: 5px 0 20px;
+  font-size: 22px;
+}
+section.contact-section .contact-item p {
+  font-size: 14px;
+}
+section.contact-section .contact-item h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+section.contact-section .form {
+  margin-top: 30px;
+}
+section.contact-section .form .col-6 {
+  width: 50%;
+  margin-bottom: 20px;
+}
+section.contact-section .form .col-12 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+section.contact-section .form textarea {
+  height: 150px;
+}
+section.contact-section .form button[type="submit"] {
+  color: white;
+  padding: 8px 20px;
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: 0.5s ease all;
+}
+section.contact-section .form button[type="submit"]:hover {
+  transform: scale(1.1);
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #e8dfec;
+  outline: none;
+  border-radius: 30px;
+  color: #504e70;
+}
 /* responsive */
 @media (max-width: 1100px) {
   .sidebar {
@@ -629,8 +685,12 @@ section.blog-section .blog-text span {
 }
 @media (max-width: 810px) {
   .services-section .row .services-item,
-  .portfolio-section .row .portfolio-item {
+  .portfolio-section .row .portfolio-item,
+  section.blog-section .row .blog-item {
     width: 50%;
+  }
+  section.blog-section .row .blog-item {
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -644,13 +704,13 @@ section.blog-section .blog-text span {
 @media (max-width: 500px) {
   .services-section .row .services-item,
   .portfolio-section .row .portfolio-item,
-  section.blog-section .row .blog-item {
+  section.blog-section .row .blog-item,
+  section.contact-section .row .contact-item,
+  section.contact-section .form .col-6 {
     width: 100%;
   }
-  section.blog-section .row .blog-item {
-    margin-bottom: 25px;
-  }
-  section.portfolio-section .navigation-btn button {
+  section.portfolio-section .navigation-btn button,
+  section.contact-section .row .contact-item {
     margin-bottom: 10px;
   }
   .lightbox .buttons button.prev {

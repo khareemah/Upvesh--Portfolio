@@ -5,7 +5,8 @@ section.about .skillbar-inner,
 section.about .item .circle,
 section.about .biodata button,
 .services-section .services-item:hover i,
-section.blog-section .date {
+section.blog-section .date,
+section.contact-section .form button[type="submit"] {
   background-color: #ec1839;
 }
 .nav ul li a.active,
@@ -15,7 +16,8 @@ section.about .sub-title span,
 .lightbox .buttons i,
 section.portfolio-section .navigation-btn button.active,
 .services-section .services-item i,
-section.blog-section .blog-text span {
+section.blog-section .blog-text span,
+section.contact-section .contact-item i {
   color: #ec1839;
 }
 .sidebar .logo a::before,
