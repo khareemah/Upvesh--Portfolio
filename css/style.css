@@ -19,6 +19,7 @@ h5 {
 button {
   border: none;
   outline: none;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -225,7 +226,7 @@ section.about .biodata button {
   transition: 0.5s ease all;
 }
 section.about .biodata button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 section.about .row .skills {
   width: 40%;
@@ -399,7 +400,7 @@ section.portfolio-section .navigation-btn button.active {
   transition: 0.5s ease all;
 }
 .portfolio-section .portfolio-item.hide {
-  /* display: none; */
+  display: none;
 }
 .portfolio-section .portfolio-item.show {
   animation: showIn 0.5s ease;
@@ -570,6 +571,7 @@ section.blog-section .blog-item .blog-item-inner {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 20px rgba(48, 46, 77, 0.15);
+  cursor: pointer;
 }
 
 section.blog-section .blog-image {
@@ -658,7 +660,7 @@ section.contact-section .form button[type="submit"] {
   transition: 0.5s ease all;
 }
 section.contact-section .form button[type="submit"]:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 input,
 textarea {
@@ -669,6 +671,57 @@ textarea {
   outline: none;
   border-radius: 30px;
   color: #504e70;
+}
+/* color switcher */
+.style-switcher {
+  position: fixed;
+  right: 0;
+  top: 20px;
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  z-index: 10;
+  border: 1px solid #e8dfec;
+  border-bottom: 1px solid #e8dfec;
+  border-right: none;
+  transform: translateX(100%);
+  transition: 0.5s ease all;
+}
+.style-switcher.open {
+  transform: translateX(0%);
+}
+.style-switcher h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e8dfec;
+}
+.style-switcher ul {
+  margin: 0;
+  list-style-type: none;
+}
+.style-switcher ul li {
+  display: inline-block;
+}
+.style-switcher ul li a {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 3px;
+}
+.style-switcher .toggle-switcher {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  background-color: white;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-right: 1px solid #e8dfec;
+  text-align: center;
+  cursor: pointer;
 }
 /* responsive */
 @media (max-width: 1100px) {

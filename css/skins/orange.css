@@ -1,0 +1,28 @@
+.social-links a i,
+h2.section-title::before,
+h2.section-title::after,
+section.about .skillbar-inner,
+section.about .item .circle,
+section.about .biodata button,
+.services-section .services-item:hover i,
+section.blog-section .date,
+section.contact-section .form button[type="submit"] {
+  background-color: #fa5b07;
+}
+.nav ul li a.active,
+.nav ul li a:hover,
+section.about .sub-title span,
+.portfolio-section .portfolio-item .overlay i,
+.lightbox .buttons i,
+section.portfolio-section .navigation-btn button.active,
+.services-section .services-item i,
+section.blog-section .blog-text span,
+section.contact-section .contact-item i {
+  color: #fa5b07;
+}
+.sidebar .logo a::before,
+.sidebar .logo a::after,
+section.about .item::before,
+section.portfolio-section .navigation-btn button.active {
+  border-color: #fa5b07;
+}

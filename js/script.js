@@ -16,6 +16,7 @@ for (let i = 0; i < buttons.length; i++) {
       console.log(targetId);
       if (target === targetId) {
         portfolioItems[j].classList.add("show");
+        portfolioItems[j].classList.remove("hide");
       } else {
         portfolioItems[j].classList.add("hide");
         portfolioItems[j].classList.remove("show");

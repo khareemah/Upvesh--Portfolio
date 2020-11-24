@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Template css Files -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/skins/pink.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/skins/pink.css" type="text/css" /> -->
+
+
+    <!-- Color Switcher Demo -->
+    <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css"/>
+    <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled/>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled/>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled/>
+    <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled/>
+
   </head>
   <body>
     <div class="main-container">
@@ -417,9 +426,22 @@
       <div class="buttons">
         <button class="prev"><i class="fa fa-angle-left" ></i></button>
         <button class="next"><i class="fa fa-angle-right"></i></button>
-
       </div>
     </div>
+
+    <div class="style-switcher">
+      <span class="toggle-switcher"><i class="fa fa-cog fa-spin"></i></span>
+      <h4>Style Switcher</h4>
+      <ul>
+        <li><a href="javascript: void(0);" onclick="setActiveStyle('pink')" title="pink" style="background-color: #ec1839"></a></li>
+        <li><a href="javascript: void(0);" onclick="setActiveStyle('blue')" title="blue" style="background-color: #2196f3"></a></li>
+        <li><a href="javascript: void(0);" onclick="setActiveStyle('orange')" title="orange" style="background-color: #fa5b0f"></a></li>
+        <li><a href="javascript: void(0);" onclick="setActiveStyle('yellow')" title="yellow" style="background-color: #ffb400"></a></li>
+        <li><a href="javascript: void(0);" onclick="setActiveStyle('green')" title="green" style="background-color: #76b626"></a></li>
+      </ul>
+    </div>
     <script src="js/script.js"></script>
+    <script src="js/styleswitcher.js"></script>
+
   </body>
 </html>
