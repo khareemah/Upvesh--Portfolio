@@ -1,3 +1,6 @@
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after,
 .social-links a i,
 h2.section-title::before,
 h2.section-title::after,
@@ -9,12 +12,16 @@ section.blog-section .date,
 section.contact-section .form button[type="submit"] {
   background-color: #ec1839;
 }
+
+body.dark .nav ul li a.active,
+body.dark nav ul li a:hover,
 .nav ul li a.active,
 .nav ul li a:hover,
 section.about .sub-title span,
 .portfolio-section .portfolio-item .overlay i,
 .lightbox .buttons i,
 section.portfolio-section .navigation-btn button.active,
+body.dark section.portfolio-section .navigation-btn button.active,
 .services-section .services-item i,
 section.blog-section .blog-text span,
 section.contact-section .contact-item i {

@@ -6,31 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Template css Files -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="css/skins/pink.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/skins/blue.css" type="text/css" />
 
 
     <!-- Color Switcher Demo -->
-    <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css"/>
-    <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled/>
+    <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled />
+    <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled/>
     <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled/>
     <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled/>
     <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled/>
-
+    <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css" />
   </head>
-  <body>
+  <body class="dark">
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
     <div class="main-container">
       <div class="sidebar">
       <div class="logo">
         <h1><a href="#home">Upvesh</a></h1>
       </div>
+      <!-- nav toggle -->
+      <div class="nav-toggle">
+        <span></span>
+      </div>
       <nav class="nav">
         <ul>
-          <li><a href="#" class="active"><span><i class="fa fa-home"></i>Home</span></a></li>
-          <li><a href="#"><span><i class="fa fa-user"></i>About</span></a></li>
-          <li><a href="#"><span><i class="fa fa-list"></i>Services</span></a></li>
-          <li><a href="#"><span><i class="fa fa-briefcase"></i>Portfolio</span></a></li>
-          <li><a href="#"><span><i class="fa fa-envelope"></i>Blog</span></a></li>
-          <li><a href="#"><span><i class="fa fa-comments"></i>Contact</span></a></li>
+          <li><a href="#home" class="active"><span><i class="fa fa-home"></i>Home</span></a></li>
+          <li><a href="#about"><span><i class="fa fa-user"></i>About</span></a></li>
+          <li><a href="#services"><span><i class="fa fa-list"></i>Services</span></a></li>
+          <li><a href="#portfolio"><span><i class="fa fa-briefcase"></i>Portfolio</span></a></li>
+          <li><a href="#blog"><span><i class="fa fa-envelope"></i>Blog</span></a></li>
+          <li><a href="#contact"><span><i class="fa fa-comments"></i>Contact</span></a></li>
         </ul>
       </nav>
       <div class="copyright">
@@ -40,9 +47,9 @@
       <div class="main-content">
         <div class="container">
           <!-- home -->
-          <section class="home padd-15">
+          <section class="home padd-15 active" id="home">
             <div class="home-content">
-              <img src="images/about.jpg" alt="profile-image">
+                <img src="images/about.jpg" alt="profile-image">
               <h1>Upvesh Kumar</h1>
               <p>I'm a Web Developer</p>
               <div class="social-links">
@@ -50,11 +57,11 @@
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-linkedin"></i></a>
-              </div>
             </div>
+              </div>
           </section>
           <!-- About -->
-          <section class="about">
+          <section class="about" id="about">
             <h2 class="section-title">About Me</h2>
             <h3 class="sub-title padd-15">I'm Upvesh Kumar and I'm a <span>Web Developer</span></h3>
             <p class="padd-15">Hi! My name is Upvesh Kumar. I am a Web Developer, and I'm very passionate and dedicated
@@ -184,7 +191,7 @@
           </section>
 
           <!-- services -->
-          <section class="services-section">
+          <section class="services-section" id="services">
           <h2 class="section-title">Services</h2>
 
           <div class="row">
@@ -239,7 +246,7 @@
           </section>
 
           <!-- porfolio -->
-          <section class="portfolio-section">
+          <section class="portfolio-section" id="portfolio">
             <h2 class="section-title">Portfolio</h2>
             <div class="navigation-btn">
               <button data-target="all" class="active">All</button>
@@ -312,7 +319,7 @@
           </section>
 
           <!-- Blog -->
-          <section class="blog-section">
+          <section class="blog-section" id="blog">
             <h2 class="section-title">Latest Blog</h2>
             <div class="row">
               <div class="blog-item padd-15">
@@ -364,7 +371,7 @@
             </div>
           </section>
          
-          <section class="contact-section">
+          <section class="contact-section" id="contact">
             <h2 class="section-title">Contact Me</h2>
             <div class="row">
               <div class="contact-item padd-15">
@@ -375,7 +382,7 @@
               <div class="contact-item padd-15">
                 <span><i class="fa fa-map-marker"></i></span>
                 <h4>Office</h4>
-                <p>+91 8800 000 000</p>
+                <p>44 Street, New Delhi, India</p>
               </div><div class="contact-item padd-15">
                 <span><i class="fa fa-envelope"></i></span>
                 <h4>Email</h4>
@@ -439,7 +446,16 @@
         <li><a href="javascript: void(0);" onclick="setActiveStyle('yellow')" title="yellow" style="background-color: #ffb400"></a></li>
         <li><a href="javascript: void(0);" onclick="setActiveStyle('green')" title="green" style="background-color: #76b626"></a></li>
       </ul>
-    </div>
+      <h4>Body Skin</h4>
+       <label for="dark">
+      <input type="radio" class="body-skin" value="dark" id="dark" name="body-skin" checked>
+      Dark
+    </label>
+    <label for="light">
+      <input type="radio" name="body-skin" class="body-skin" value="light" id="light">
+      Light
+    </label>
+
     <script src="js/script.js"></script>
     <script src="js/styleswitcher.js"></script>
 
