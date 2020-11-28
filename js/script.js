@@ -1,6 +1,9 @@
 // Remove loader on load
 window.addEventListener("load", function() {
   document.querySelector(".preloader").classList.add("loaded");
+  this.setTimeout(function() {
+    document.querySelector(".preloader").style.display = "none";
+  }, 2000);
 });
 // filter
 const buttonsContainer = document.querySelector(".navigation-btn"),
